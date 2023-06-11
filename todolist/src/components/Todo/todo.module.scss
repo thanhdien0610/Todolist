@@ -1,0 +1,24 @@
+.todo {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  .checkbox {
+    flex: 0 0 10%;
+    max-width: 10%;
+  }
+  .todoName {
+    color: green;
+    flex: 0 0 60%;
+    max-width: 60%;
+    // margin-left: 10px;
+    &.todoNameDone {
+      color: #ccc;
+      text-decoration: line-through;
+    }
+  }
+  .todoActions {
+    max-width: 30%;
+    display: flex;
+    gap: 3px;
+  }
+}
